@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>15 Puzzle</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>15 Puzzle</h1>
+
+  <!-- Stats -->
+  <div class="stats">
+    <div class="stat">
+      <span class="stat-label">Moves</span>
+      <span class="stat-value" id="moves">0</span>
+    </div>
+    <div class="stat">
+      <span class="stat-label">Time</span>
+      <span class="stat-value" id="timer">0:00</span>
+    </div>
+  </div>
+
+  <!-- Board -->
+  <div class="board-wrapper">
+    <div id="board" role="grid" aria-label="15 Puzzle board"></div>
+
+    <!-- Win overlay -->
+    <div id="win-overlay" role="dialog" aria-modal="true" aria-label="You win!">
+      <div class="win-emoji">🎉</div>
+      <div class="win-title">You solved it!</div>
+      <div class="win-stats" id="win-stats"></div>
+      <button class="win-btn" id="btn-win-new">Play Again</button>
+    </div>
+  </div>
+
+  <!-- Hint message -->
+  <div id="hint-msg" class="hidden"></div>
+
+  <!-- Controls -->
+  <div class="controls">
+    <button id="btn-new">New Game</button>
+    <button id="btn-hint">💡 Hint</button>
+    <button id="btn-solve">Solve</button>
+  </div>
+
+  <p class="kb-hint">Use arrow keys or click adjacent tiles to slide</p>
+
+  <script src="game.js"></script>
+</body>
+</html>
