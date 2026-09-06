@@ -1,6 +1,6 @@
 # 15 Puzzle
 
-A classic sliding tile puzzle built with pure HTML, CSS, and JavaScript — no frameworks, no dependencies. Just open `index.html` in a browser and play.
+A classic sliding tile puzzle built with HTML, CSS, and JavaScript 
 
 ---
 
